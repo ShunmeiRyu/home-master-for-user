@@ -21,17 +21,17 @@ export default function EmailInput() {
     });
 
     return (
-        <div class="mb-5">
-            <label for="email" class="block mb-3 text-base font-sans font-semibold tracking-tight leading-tight">メールアドレス</label>
-            <div class="relative">
+        <div>
+            <label htmlFor="email" className="block mb-3 text-base font-sans font-semibold tracking-tight leading-tight">メールアドレス</label>
+            <div className="relative">
                 <input
                     id="email"
                     type="email"
-                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight font-sans text-sm font-normal h-10"
+                    className="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight font-sans text-sm font-normal h-10"
                     placeholder="メールアドレスを入力"
                     onChange={handleEmailChange}
                 />
-                <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                     <CheckCircleIcon className={iconClassName} sx={{ fontSize: 16 }} />
                 </div>
             </div>
