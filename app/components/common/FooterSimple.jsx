@@ -1,7 +1,7 @@
 export default function FooterSimple() {
     return (
-        <div class="flex items-center justify-center h-16">
-            <p class="text-xs">© TSUKURUBA Inc.</p>
+        <div className="flex items-center justify-center h-16">
+            <p className="text-xs">© TSUKURUBA Inc.</p>
         </div>
     )
 }
