@@ -37,8 +37,8 @@ export default function PwdInput(props) {
     });
 
     return (
-        <div className="mt-5">
-            <label htmlFor="password" className="block mb-3 text-base font-sans font-semibold tracking-tight leading-tight">{isFirst ? "パスワード" : "パスワード(再入力)"}</label>
+        <div className="mt-4">
+            <label htmlFor="password" className="block mb-2 text-base font-sans font-semibold tracking-tight leading-tight">{isFirst ? "パスワード" : "パスワード(再入力)"}</label>
             <div className="relative">
                 <input
                     id={isFirst ? "password" : "checkPassword"}
@@ -52,6 +52,8 @@ export default function PwdInput(props) {
                     <VisibilityIcon className={iconClassName} sx={{ fontSize: 20 }} />
                 </div>
             </div>
+           
+
             {isCheck ?
                 <div className="flex items-center h-4 mt-2">
                     <HorizontalRuleIcon fontSize="large" color={safe === "Weak" || safe === "Moderate" || safe === "Strong" ? "success" : "disabled"} />

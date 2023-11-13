@@ -22,7 +22,7 @@ export default function EmailInput() {
 
     return (
         <div>
-            <label htmlFor="email" className="block mb-3 text-base font-sans font-semibold tracking-tight leading-tight">メールアドレス</label>
+            <label htmlFor="email" className="block mb-2 text-base font-sans font-semibold tracking-tight leading-tight">メールアドレス</label>
             <div className="relative">
                 <input
                     id="email"
