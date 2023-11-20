@@ -3,7 +3,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import clsx from 'clsx';
 import { useState } from 'react';
 
-export default function EmailInput() {
+export default function EmailInput({onEmailChange}) {
     const [email, setEmail] = useState("");
     const [isEmailValid, setEmailValid] = useState(false);
 
@@ -13,6 +13,7 @@ export default function EmailInput() {
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         const isValid = emailRegex.test(newEmail);
         setEmailValid(isValid);
+        onEmailChange(newEmail);
     }
 
     const iconClassName = clsx({

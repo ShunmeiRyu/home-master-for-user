@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PwdInput from "../../../../components/common/PwdInput";
 import VerifyCode from "../../../../components/common/VerifyCode";
+import AuthButton from "../../../../components/common/AuthButton";
 
 export default function ResetPwd() {
     return (
@@ -10,6 +11,7 @@ export default function ResetPwd() {
             <VerifyCode />
             <PwdInput first={true} check={true} />
             <PwdInput first={false} />
+            <AuthButton btnText="新規" href=""/>
             <Link href="/login" className="font-sans text-xs font-normal mt-3 underline self-center">すでに会員の方はログイン</Link>
         </div>
     )

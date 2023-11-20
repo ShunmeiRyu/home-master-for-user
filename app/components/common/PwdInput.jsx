@@ -25,6 +25,8 @@ export default function PwdInput(props) {
         } else {
             setSafe("Weak")
         }
+
+        props.onPwdChange(newPwd);
     };
 
     const togglePasswordVisibility = () => {
@@ -52,7 +54,7 @@ export default function PwdInput(props) {
                     <VisibilityIcon className={iconClassName} sx={{ fontSize: 20 }} />
                 </div>
             </div>
-           
+
 
             {isCheck ?
                 <div className="flex items-center h-4 mt-2">
