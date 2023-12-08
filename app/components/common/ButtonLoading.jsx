@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 export default function ButtonLoading() {
+  console.log("载入被渲染了")
   return (
     <div className="flex w-[20.3125rem] h-[3rem] flex-shrink-0
     bg-gun-powder-20 rounded-2xl
